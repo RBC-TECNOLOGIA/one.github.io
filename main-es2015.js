@@ -2971,6 +2971,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
 /* harmony import */ var _ng_idle_keepalive__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ng-idle/keepalive */ "./node_modules/@ng-idle/keepalive/fesm2015/ng-idle-keepalive.js");
 /* harmony import */ var _ng_idle_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @ng-idle/core */ "./node_modules/@ng-idle/core/fesm2015/ng-idle-core.js");
+/* harmony import */ var ng2_smart_table__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng2-smart-table */ "./node_modules/ng2-smart-table/index.js");
 
 
 
@@ -2980,6 +2981,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 Object(_angular_common__WEBPACK_IMPORTED_MODULE_5__["registerLocaleData"])(_angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_7___default.a);
+
 
 
 
@@ -3026,7 +3028,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__["NgbModule"],
             _ng_idle_keepalive__WEBPACK_IMPORTED_MODULE_15__["NgIdleKeepaliveModule"].forRoot(),
             _ng_idle_core__WEBPACK_IMPORTED_MODULE_16__["NgIdleModule"],
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbProgressBarModule"]
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbProgressBarModule"],
+            ng2_smart_table__WEBPACK_IMPORTED_MODULE_17__["Ng2SmartTableModule"],
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbTreeGridModule"]
         ],
         providers: [
             {
