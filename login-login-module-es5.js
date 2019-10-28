@@ -49,6 +49,7 @@ var UsuarioApiService = /** @class */ (function () {
                 .then(function (s) {
                 _this.sessionService.set('user', s);
                 _this.sessionService.set('token', s.token);
+                _this.sessionService.set('codigo_perfil_atuacao', s.codigo_perfil_atuacao);
                 resolve(s);
             })
                 .catch(function (e) {
