@@ -83651,7 +83651,7 @@ let CampanhasApiService = class CampanhasApiService {
     perfil(dados = {}) {
         return this.requestService.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi}/campanhas-perfil`, dados, true);
     }
-    metas(dados = {}) {
+    metas(dados) {
         return this.requestService.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi}/metas-campanha-perfil`, dados, true);
     }
 };
