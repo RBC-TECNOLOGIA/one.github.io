@@ -83688,7 +83688,7 @@ let DiasUteisPeriodoApiService = class DiasUteisPeriodoApiService {
     constructor(requestService) {
         this.requestService = requestService;
     }
-    periodo(dados = {}) {
+    periodo(dados) {
         return this.requestService.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi}/dias-uteis-periodo`, dados, true);
     }
 };

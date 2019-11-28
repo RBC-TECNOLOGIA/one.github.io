@@ -83777,7 +83777,6 @@ var DiasUteisPeriodoApiService = /** @class */ (function () {
         this.requestService = requestService;
     }
     DiasUteisPeriodoApiService.prototype.periodo = function (dados) {
-        if (dados === void 0) { dados = {}; }
         return this.requestService.post(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/dias-uteis-periodo", dados, true);
     };
     DiasUteisPeriodoApiService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
