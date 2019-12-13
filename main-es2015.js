@@ -3031,7 +3031,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _ng_idle_core__WEBPACK_IMPORTED_MODULE_16__["NgIdleModule"],
             _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbProgressBarModule"],
             ng2_smart_table__WEBPACK_IMPORTED_MODULE_17__["Ng2SmartTableModule"],
-            _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbTreeGridModule"]
+            _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbTreeGridModule"],
         ],
         providers: [
             {
