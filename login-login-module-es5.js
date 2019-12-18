@@ -56,7 +56,8 @@ var UsuarioApiService = /** @class */ (function () {
                 _this.sessionService.set('permissao_esteira_producao', s.permissao_acesso.esteira_producao.acesso);
                 _this.sessionService.set('permissao_cadastro_cliente', s.permissao_acesso.cadastro_cliente_teste_1.acesso);
                 _this.sessionService.set('permissao_cadastro_parceiro_negocio', s.permissao_acesso.cadastro_pn.acesso);
-                _this.sessionService.set('permissao_cadastro_bancos', s.permissao_acesso.cadastro_bancos);
+                _this.sessionService.set('permissao_cadastro_bancos', s.permissao_acesso.cadastro_bancos.acesso);
+                _this.sessionService.set('permissao_cadastro_plano_de_contas', s.permissao_acesso.cadastro_plano_de_contas.acesso);
                 resolve(s);
             })
                 .catch(function (e) {

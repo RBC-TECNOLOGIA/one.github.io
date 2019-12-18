@@ -2917,11 +2917,12 @@ var AppComponent = /** @class */ (function () {
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
   \*******************************/
-/*! exports provided: AppModule, PageModule, CadastroModule */
+/*! exports provided: options, AppModule, PageModule, CadastroModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "options", function() { return options; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageModule", function() { return PageModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadastroModule", function() { return CadastroModule; });
@@ -2934,16 +2935,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/locales/pt */ "./node_modules/@angular/common/locales/pt.js");
 /* harmony import */ var _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _nebular_theme__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @nebular/theme */ "./node_modules/@nebular/theme/fesm5/index.js");
-/* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./@core/core.module */ "./src/app/@core/core.module.ts");
-/* harmony import */ var _theme_theme_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./@theme/theme.module */ "./src/app/@theme/theme.module.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _pipes_pipes_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pipes/pipes.module */ "./src/app/pipes/pipes.module.ts");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
-/* harmony import */ var _ng_idle_keepalive__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ng-idle/keepalive */ "./node_modules/@ng-idle/keepalive/fesm5/ng-idle-keepalive.js");
-/* harmony import */ var _ng_idle_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @ng-idle/core */ "./node_modules/@ng-idle/core/fesm5/ng-idle-core.js");
-/* harmony import */ var ng2_smart_table__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng2-smart-table */ "./node_modules/ng2-smart-table/index.js");
+/* harmony import */ var _nebular_date_fns__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @nebular/date-fns */ "./node_modules/@nebular/date-fns/fesm5/index.js");
+/* harmony import */ var _nebular_theme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @nebular/theme */ "./node_modules/@nebular/theme/fesm5/index.js");
+/* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./@core/core.module */ "./src/app/@core/core.module.ts");
+/* harmony import */ var _theme_theme_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./@theme/theme.module */ "./src/app/@theme/theme.module.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _pipes_pipes_module__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pipes/pipes.module */ "./src/app/pipes/pipes.module.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _ng_idle_keepalive__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @ng-idle/keepalive */ "./node_modules/@ng-idle/keepalive/fesm5/ng-idle-keepalive.js");
+/* harmony import */ var _ng_idle_core__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @ng-idle/core */ "./node_modules/@ng-idle/core/fesm5/ng-idle-core.js");
+/* harmony import */ var ng2_smart_table__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng2-smart-table */ "./node_modules/ng2-smart-table/index.js");
+/* harmony import */ var ngx_mask__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ngx-mask */ "./node_modules/ngx-mask/fesm5/ngx-mask.js");
+/* harmony import */ var ngx_cpf_cnpj__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ngx-cpf-cnpj */ "./node_modules/ngx-cpf-cnpj/fesm5/ngx-cpf-cnpj.js");
 
 
 
@@ -2963,6 +2967,10 @@ Object(_angular_common__WEBPACK_IMPORTED_MODULE_5__["registerLocaleData"])(_angu
 
 
 
+
+
+
+var options;
 /**
  * @license
  * Copyright Akveo. All Rights Reserved.
@@ -2974,44 +2982,47 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"],
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__["NgbToastModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_11__["AppRoutingModule"],
-                _theme_theme_module__WEBPACK_IMPORTED_MODULE_10__["ThemeModule"].forRoot(),
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__["NgbToastModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_12__["AppRoutingModule"],
+                _theme_theme_module__WEBPACK_IMPORTED_MODULE_11__["ThemeModule"].forRoot(),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbStepperModule"],
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbSidebarModule"].forRoot(),
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbSelectModule"],
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbMenuModule"].forRoot(),
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbDatepickerModule"].forRoot(),
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbDialogModule"].forRoot(),
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbWindowModule"].forRoot(),
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbToastrModule"].forRoot(),
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbChatModule"].forRoot({
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbStepperModule"],
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbSidebarModule"].forRoot(),
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbSelectModule"],
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbMenuModule"].forRoot(),
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbDatepickerModule"].forRoot(),
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbDialogModule"].forRoot(),
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbWindowModule"].forRoot(),
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbToastrModule"].forRoot(),
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbChatModule"].forRoot({
                     messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY',
                 }),
-                _core_core_module__WEBPACK_IMPORTED_MODULE_9__["CoreModule"].forRoot(),
-                _pipes_pipes_module__WEBPACK_IMPORTED_MODULE_13__["PipesModule"],
+                _core_core_module__WEBPACK_IMPORTED_MODULE_10__["CoreModule"].forRoot(),
+                _pipes_pipes_module__WEBPACK_IMPORTED_MODULE_14__["PipesModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"],
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_14__["NgbModule"],
-                _ng_idle_keepalive__WEBPACK_IMPORTED_MODULE_15__["NgIdleKeepaliveModule"].forRoot(),
-                _ng_idle_core__WEBPACK_IMPORTED_MODULE_16__["NgIdleModule"],
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbProgressBarModule"],
-                ng2_smart_table__WEBPACK_IMPORTED_MODULE_17__["Ng2SmartTableModule"],
-                _nebular_theme__WEBPACK_IMPORTED_MODULE_8__["NbTreeGridModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__["NgbModule"],
+                _ng_idle_keepalive__WEBPACK_IMPORTED_MODULE_16__["NgIdleKeepaliveModule"].forRoot(),
+                _ng_idle_core__WEBPACK_IMPORTED_MODULE_17__["NgIdleModule"],
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbProgressBarModule"],
+                ng2_smart_table__WEBPACK_IMPORTED_MODULE_18__["Ng2SmartTableModule"],
+                _nebular_theme__WEBPACK_IMPORTED_MODULE_9__["NbTreeGridModule"],
+                ngx_mask__WEBPACK_IMPORTED_MODULE_19__["NgxMaskModule"].forRoot(options),
+                _nebular_date_fns__WEBPACK_IMPORTED_MODULE_8__["NbDateFnsDateModule"].forRoot({ format: 'dd/MM/yyyy' }),
+                ngx_cpf_cnpj__WEBPACK_IMPORTED_MODULE_20__["NgxCpfCnpjModule"],
             ],
             providers: [
                 {
                     provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__["LOCALE_ID"],
                     useValue: 'pt',
-                }
+                },
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"]],
         })
     ], AppModule);
     return AppModule;
