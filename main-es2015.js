@@ -2890,7 +2890,7 @@ const routes = [
     { path: '**', redirectTo: 'auth/login' },
 ];
 const config = {
-    useHash: false,
+    useHash: true,
 };
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -2999,6 +2999,7 @@ Object(_angular_common__WEBPACK_IMPORTED_MODULE_5__["registerLocaleData"])(_angu
 
 
 
+
 let options;
 /**
  * @license
@@ -3048,6 +3049,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             {
                 provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__["LOCALE_ID"],
                 useValue: 'pt',
+            },
+            {
+                provide: _angular_common__WEBPACK_IMPORTED_MODULE_5__["LocationStrategy"],
+                useClass: _angular_common__WEBPACK_IMPORTED_MODULE_5__["HashLocationStrategy"],
             },
         ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"]],
