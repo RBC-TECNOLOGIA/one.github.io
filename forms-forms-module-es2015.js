@@ -15,16 +15,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nebular_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @nebular/theme */ "./node_modules/@nebular/theme/fesm2015/index.js");
 /* harmony import */ var _theme_theme_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../@theme/theme.module */ "./src/app/@theme/theme.module.ts");
 /* harmony import */ var _forms_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./forms-routing.module */ "./src/app/pages/forms/forms-routing.module.ts");
-/* harmony import */ var _forms_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./forms.component */ "./src/app/pages/forms/forms.component.ts");
-/* harmony import */ var _form_inputs_form_inputs_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./form-inputs/form-inputs.component */ "./src/app/pages/forms/form-inputs/form-inputs.component.ts");
-/* harmony import */ var _form_layouts_form_layouts_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./form-layouts/form-layouts.component */ "./src/app/pages/forms/form-layouts/form-layouts.component.ts");
-/* harmony import */ var _datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./datepicker/datepicker.component */ "./src/app/pages/forms/datepicker/datepicker.component.ts");
-/* harmony import */ var _buttons_buttons_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./buttons/buttons.component */ "./src/app/pages/forms/buttons/buttons.component.ts");
-
-
-
-
-
 
 
 
@@ -32,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let FormsModule = class FormsModule {
 };
-FormsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+FormsModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         imports: [
             _theme_theme_module__WEBPACK_IMPORTED_MODULE_3__["ThemeModule"],
@@ -49,11 +39,11 @@ FormsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _nebular_theme__WEBPACK_IMPORTED_MODULE_2__["NbIconModule"],
         ],
         declarations: [
-            _forms_component__WEBPACK_IMPORTED_MODULE_5__["FormsComponent"],
-            _buttons_buttons_component__WEBPACK_IMPORTED_MODULE_9__["ButtonsComponent"],
-            _form_inputs_form_inputs_component__WEBPACK_IMPORTED_MODULE_6__["FormInputsComponent"],
-            _form_layouts_form_layouts_component__WEBPACK_IMPORTED_MODULE_7__["FormLayoutsComponent"],
-            _datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_8__["DatepickerComponent"],
+        //FormsComponent,
+        //ButtonsComponent,
+        //FormInputsComponent,
+        //FormLayoutsComponent,
+        //DatepickerComponent,
         ],
     })
 ], FormsModule);

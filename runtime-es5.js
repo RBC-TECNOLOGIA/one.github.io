@@ -10,7 +10,7 @@
 /******/ 		var moduleId, chunkId, i = 0, resolves = [];
 /******/ 		for(;i < chunkIds.length; i++) {
 /******/ 			chunkId = chunkIds[i];
-/******/ 			if(installedChunks[chunkId]) {
+/******/ 			if(Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
 /******/ 				resolves.push(installedChunks[chunkId][0]);
 /******/ 			}
 /******/ 			installedChunks[chunkId] = 0;
@@ -46,6 +46,7 @@
 /******/ 				result = __webpack_require__(__webpack_require__.s = deferredModule[0]);
 /******/ 			}
 /******/ 		}
+/******/
 /******/ 		return result;
 /******/ 	}
 /******/
@@ -63,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"default~login-login-module~pages-pages-module":"default~login-login-module~pages-pages-module","default~forms-forms-module~login-login-module":"default~forms-forms-module~login-login-module","login-login-module":"login-login-module","pages-pages-module":"pages-pages-module","charts-charts-module":"charts-charts-module","forms-forms-module":"forms-forms-module","extra-components-extra-components-module":"extra-components-extra-components-module","layout-layout-module":"layout-layout-module","tables-tables-module":"tables-tables-module","ui-features-ui-features-module":"ui-features-ui-features-module"}[chunkId]||chunkId) + "-es5.js"
+/******/ 		return __webpack_require__.p + "" + ({"default~login-login-module~pages-pages-module":"default~login-login-module~pages-pages-module","default~forms-forms-module~login-login-module":"default~forms-forms-module~login-login-module","login-login-module":"login-login-module","pages-pages-module":"pages-pages-module","charts-charts-module":"charts-charts-module","forms-forms-module":"forms-forms-module","extra-components-extra-components-module":"extra-components-extra-components-module","layout-layout-module":"layout-layout-module","tables-tables-module":"tables-tables-module","ui-features-ui-features-module":"ui-features-ui-features-module"}[chunkId]||chunkId) +    "-es5.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -122,6 +123,8 @@
 /******/ 				}
 /******/ 				script.src = jsonpScriptSrc(chunkId);
 /******/
+/******/ 				// create error before stack unwound to get useful stacktrace later
+/******/ 				var error = new Error();
 /******/ 				onScriptComplete = function (event) {
 /******/ 					// avoid mem leaks in IE.
 /******/ 					script.onerror = script.onload = null;
@@ -131,7 +134,8 @@
 /******/ 						if(chunk) {
 /******/ 							var errorType = event && (event.type === 'load' ? 'missing' : event.type);
 /******/ 							var realSrc = event && event.target && event.target.src;
-/******/ 							var error = new Error('Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')');
+/******/ 							error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 							error.name = 'ChunkLoadError';
 /******/ 							error.type = errorType;
 /******/ 							error.request = realSrc;
 /******/ 							chunk[1](error);
