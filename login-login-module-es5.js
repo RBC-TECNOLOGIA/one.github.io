@@ -83,7 +83,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.requestService = requestService;
         this.sessionService = sessionService;
-      } // 'codigo_conexao': 9 // usar esse parametro em ambiente de teste
+      } // 'codigo_conexao': 9 // usar esse parametro em ambiente de teste completo banco e máquina
+      // 'codigo_conexao': 8 // máquina do Rafael Banco de produção
 
 
       _createClass(UsuarioApiService, [{
@@ -133,6 +134,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               _this.sessionService.set('permissao_cadastro_tipo_lojas', s.permissao_acesso.cadastro_tipo_loja.acesso);
 
               _this.sessionService.set('permissao_cadastro_tipo_canal_vendas', s.permissao_acesso.cadastro_tipo_canal_venda.acesso);
+
+              _this.sessionService.set('permissao_cadastro_financeiro', s.permissao_acesso.manutencao_financeiro.acesso);
 
               resolve(s);
             }).catch(function (e) {
