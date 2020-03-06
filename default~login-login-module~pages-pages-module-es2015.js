@@ -108906,14 +108906,14 @@ let RequestService = class RequestService {
                 .catch(err => reject(err));
         });
     }
-    postDownload(url, body, security = false) {
+    postDownload(url, body, security = false, modulo) {
         return new Promise((resolve, reject) => {
             this.validaUser(security)
                 .then((token) => {
                 return this.http
                     .post(url, body, this._optionsDownload(token))
                     .toPromise()
-                    .then(response => this.downLoadFile(response, 'text/csv;charset=ANSI'));
+                    .then(response => this.downLoadFile(response, 'text/csv;charset=ANSI', modulo));
             })
                 .then(data => resolve(data))
                 .catch(err => reject(err));
@@ -108937,9 +108937,15 @@ let RequestService = class RequestService {
         let url = window.URL.createObjectURL(blob);
         var a = document.createElement('a');
         document.body.appendChild(a);
-        if (type === 'text/csv;charset=ASCII') {
-            a.download = 'esteira.csv';
-            a.href = url;
+        if (type === 'text/csv;charset=ANSI') {
+            if (filename != '') {
+                a.download = filename + '.csv';
+                a.href = url;
+            }
+            else {
+                a.download = 'esteira.csv';
+                a.href = url;
+            }
         }
         if (type === 'application/pdf' && filename !== undefined) {
             a.download = 'bordero_' + filename + '.pdf';
