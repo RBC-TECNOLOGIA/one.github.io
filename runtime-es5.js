@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"default~login-login-module~pages-pages-module":"default~login-login-module~pages-pages-module","default~forms-forms-module~login-login-module":"default~forms-forms-module~login-login-module","login-login-module":"login-login-module","pages-pages-module":"pages-pages-module","charts-charts-module":"charts-charts-module","forms-forms-module":"forms-forms-module","extra-components-extra-components-module":"extra-components-extra-components-module","layout-layout-module":"layout-layout-module","tables-tables-module":"tables-tables-module","ui-features-ui-features-module":"ui-features-ui-features-module"}[chunkId]||chunkId) +    "-es5.js"
+/******/ 		return __webpack_require__.p + "" + ({"default~login-login-module~pages-pages-module":"default~login-login-module~pages-pages-module","default~forms-forms-module~login-login-module":"default~forms-forms-module~login-login-module","login-login-module":"login-login-module","pages-pages-module":"pages-pages-module","canvg":"canvg","charts-charts-module":"charts-charts-module","forms-forms-module":"forms-forms-module","extra-components-extra-components-module":"extra-components-extra-components-module","layout-layout-module":"layout-layout-module","pdfmake":"pdfmake","tables-tables-module":"tables-tables-module","ui-features-ui-features-module":"ui-features-ui-features-module","xlsx":"xlsx"}[chunkId]||chunkId) +    "-es5.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
