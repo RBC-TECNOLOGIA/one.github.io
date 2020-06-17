@@ -18052,7 +18052,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var __values =
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-<<<<<<< HEAD
 }));
 
 
@@ -18149,47 +18148,4 @@ module.exports = __webpack_require__(/*! D:\jefferson\Documents\web\corban_one\s
 /***/ })
 
 },[[2,"runtime"]]]);
-=======
-
-
-    if (typeof SVGElement.prototype.contains === 'undefined') {
-      SVGElement.prototype.contains = HTMLDivElement.prototype.contains;
-    }
-    /***/
-
-  },
-
-  /***/
-  2:
-  /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-    !*** multi ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js zone.js/dist/zone-legacy ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js ./src/polyfills.ts ***!
-    \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-
-  /*! no static exports found */
-
-  /***/
-  function _(module, exports, __webpack_require__) {
-    __webpack_require__(
-    /*! C:\Users\PC\Documents\web\corban_one\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */
-    "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
-
-    __webpack_require__(
-    /*! zone.js/dist/zone-legacy */
-    "./node_modules/zone.js/dist/zone-legacy.js");
-
-    __webpack_require__(
-    /*! C:\Users\PC\Documents\web\corban_one\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\jit-polyfills.js */
-    "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
-
-    __webpack_require__(
-    /*! C:\Users\PC\Documents\web\corban_one\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-jit-polyfills.js */
-    "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js");
-
-    module.exports = __webpack_require__(
-    /*! C:\Users\PC\Documents\web\corban_one\src\polyfills.ts */
-    "./src/polyfills.ts");
-    /***/
-  }
-}, [[2, "runtime"]]]);
->>>>>>> a3bf207789569eb84231cae5cbf3940784d0f2c7
 //# sourceMappingURL=polyfills-es5.js.map
