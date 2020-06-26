@@ -43,11 +43,11 @@ var UsuarioApiService = /** @class */ (function () {
     UsuarioApiService.prototype.dados = function (user) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            var response = _this.requestService.post(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/dados-usuario", {
+            var response = _this.requestService.post(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlToken + "/dados-usuario", {
                 'cpf': user.cpf,
                 'senha': String(user.senha).toUpperCase(),
                 'projeto': 'CORBAN',
-                'at_cliente': 'RIBERCRED',
+                'at_cliente': 'RIBERCRED'
             });
             response
                 .then(function (s) {

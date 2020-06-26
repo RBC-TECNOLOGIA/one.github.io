@@ -3348,8 +3348,10 @@ __webpack_require__.r(__webpack_exports__);
 var environment = {
     production: true,
     urlAutentication: 'https://serv-prod-01.ribercred.com.br:10725/autenticador/v1/TServerMetodoToken/Token',
-    //urlApi: 'https://autenticador.rbc.com.br:10740/api'
+    // urlApi: 'https://autenticador.rbc.com.br:10740/api'
+    // urlApi: 'http://192.168.60.98:10740/api', // ambiente de teste
     urlApi: 'https://serv-prod-01.ribercred.com.br:10740/api',
+    urlToken: 'https://serv-prod-01.ribercred.com.br:10740/api',
 };
 
 
