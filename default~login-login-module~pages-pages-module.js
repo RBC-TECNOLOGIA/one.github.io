@@ -107970,7 +107970,7 @@ var CampanhasApiService = /** @class */ (function () {
     }
     CampanhasApiService.prototype.perfil = function (dados) {
         if (dados === void 0) { dados = {}; }
-        return this.requestService.get(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/campanhas-perfil", dados, true);
+        return this.requestService.get(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/campanha/one/campanhas-perfil", dados, true);
     };
     CampanhasApiService.prototype.metas = function (dados) {
         return this.requestService.get(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/campanha/one/metas-campanha-perfil", dados, true);
