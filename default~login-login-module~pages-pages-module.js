@@ -107975,6 +107975,10 @@ var CampanhasApiService = /** @class */ (function () {
     CampanhasApiService.prototype.metas = function (dados) {
         return this.requestService.get(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/campanha/one/metas-campanha-perfil", dados, true);
     };
+    CampanhasApiService.prototype.imprimirCSV = function (dados) {
+        var codigo_campanha = dados;
+        return this.requestService.postDownload(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/campanha/one/metas-campanha-perfil-analitico?codigo_campanha=" + codigo_campanha, dados, true, 'dashboard-campanha');
+    };
     CampanhasApiService.ctorParameters = function () { return [
         { type: _services_request_service__WEBPACK_IMPORTED_MODULE_3__["RequestService"] }
     ]; };
