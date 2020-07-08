@@ -107977,7 +107977,7 @@ var CampanhasApiService = /** @class */ (function () {
     };
     CampanhasApiService.prototype.imprimirCSV = function (dados) {
         var codigo_campanha = dados;
-        return this.requestService.postDownload(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/campanha/one/metas-campanha-perfil-analitico?codigo_campanha=" + codigo_campanha, dados, true, 'dashboard-campanha');
+        return this.requestService.getDownload(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].urlApi + "/campanha/one/metas-campanha-perfil-analitico?codigo_campanha=" + codigo_campanha, 'text/csv;charset=ANSI', dados, true, 'dashboard-campanha');
     };
     CampanhasApiService.ctorParameters = function () { return [
         { type: _services_request_service__WEBPACK_IMPORTED_MODULE_3__["RequestService"] }
@@ -109060,14 +109060,14 @@ var RequestService = /** @class */ (function () {
                 .catch(function (err) { return reject(err); });
         });
     };
-    RequestService.prototype.getDownload = function (url, parametros, security, bordero) {
+    RequestService.prototype.getDownload = function (url, type, parametros, security, bordero) {
         var _this = this;
         if (security === void 0) { security = false; }
         return new Promise(function (resolve, reject) {
             _this.validaUser(security)
                 .then(function (token) {
                 _this.http.get(url, _this._optionsDownload(token, parametros))
-                    .subscribe(function (response) { return _this.downLoadFile(response, 'application/pdf', bordero); });
+                    .subscribe(function (response) { return _this.downLoadFile(response, type, bordero); });
             })
                 .then(function (data) { return resolve(data); })
                 .catch(function (err) { return reject(err); });
