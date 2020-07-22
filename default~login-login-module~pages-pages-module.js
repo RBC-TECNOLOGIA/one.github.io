@@ -109138,7 +109138,7 @@ var RequestService = /** @class */ (function () {
             'Content-Type': 'application/json',
             Accept: 'application/json',
         };
-        console.log('_options: ', token);
+        // console.log('_options: ', token);
         if (token) {
             h['Authorization'] = token;
         }
@@ -109160,7 +109160,7 @@ var RequestService = /** @class */ (function () {
             'Content-Type': 'application/json',
             Accept: 'application/json',
         };
-        console.log('_options: ', token);
+        // console.log('_options: ', token);
         if (token) {
             h['Authorization'] = token;
         }
@@ -109174,7 +109174,7 @@ var RequestService = /** @class */ (function () {
         return {
             headers: headers,
             params: params,
-            responseType: 'blob'
+            responseType: 'blob',
         };
     };
     RequestService.prototype._optionsDel = function (token, parametros) {
@@ -109184,7 +109184,7 @@ var RequestService = /** @class */ (function () {
             Accept: 'application/json',
         };
         var b = parametros;
-        console.log('_options: ', token);
+        // console.log('_options: ', token);
         if (token) {
             h['Authorization'] = token;
         }
