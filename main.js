@@ -3246,6 +3246,14 @@ var PagesComponent = /** @class */ (function () {
                 home: (window.sessionStorage.permissao_esteira_producao === 'false'),
             },
             {
+                title: 'Tabela de Comissão e Repasse',
+                link: '/pages/tabela-comissao',
+                icon: 'book-open-outline',
+                home: false,
+                expanded: (window.sessionStorage.permissao_cadastro_financeiro === 'false'),
+                hidden: (window.sessionStorage.permissao_cadastro_financeiro === 'false'),
+            },
+            {
                 title: 'Financeiro',
                 link: '/pages/financeiro',
                 icon: 'percent-outline',
