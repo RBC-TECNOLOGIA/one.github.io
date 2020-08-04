@@ -87,6 +87,7 @@ var UsuarioApiService = /** @class */ (function () {
                 _this.sessionService.set('permissao_cadastro_tipo_lojas', s.permissao_acesso.cadastro_tipo_loja.acesso);
                 _this.sessionService.set('permissao_cadastro_tipo_canal_vendas', s.permissao_acesso.cadastro_tipo_canal_venda.acesso);
                 _this.sessionService.set('permissao_cadastro_financeiro', s.permissao_acesso.manutencao_financeiro.acesso);
+                _this.sessionService.set('permissao_tabela_comissao', s.permissao_acesso.tabela_comissao.acesso);
                 resolve(s);
             })
                 .catch(function (e) {

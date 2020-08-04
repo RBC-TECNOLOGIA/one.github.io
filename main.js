@@ -3250,8 +3250,8 @@ var PagesComponent = /** @class */ (function () {
                 link: '/pages/tabela-comissao',
                 icon: 'book-open-outline',
                 home: false,
-                expanded: (window.sessionStorage.permissao_cadastro_financeiro === 'false'),
-                hidden: (window.sessionStorage.permissao_cadastro_financeiro === 'false'),
+                expanded: (window.sessionStorage.permissao_tabela_comissao === 'false'),
+                hidden: (window.sessionStorage.permissao_tabela_comissao === 'false'),
             },
             {
                 title: 'Financeiro',
