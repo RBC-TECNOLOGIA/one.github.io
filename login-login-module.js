@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"fundo\">\r\n  <div class=\"erro\" *ngIf=\"erro_api != ''\">✖ {{erro_api}}</div>\r\n  <div style=\"text-align: center;\"><img src=\"assets/imgs/logo_empresa.png\" /></div>\r\n  <!--<h4 style=\"text-align: center;\">CORBAN ONE</h4>-->\r\n  <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\" novalidate>\r\n    <div class=\"form-group\">\r\n      <label for=\"CPF\" class=\"label\">CPF</label>\r\n      <input type=\"tel\" name=\"cpf\" ngModel required #cpf=\"ngModel\" nbInput fullWidth id=\"cpf\" placeholder=\"CPF\">\r\n      <span class=\"text-danger\"> {{userValid.cpf}}</span>\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"senha\" class=\"label\">Senha</label>\r\n      <input type=\"password\" name=\"senha\" ngModel required #senha=\"ngModel\" nbInput fullWidth id=\"senha\"\r\n        placeholder=\"Senha\">\r\n      <span class=\"text-danger\"> {{userValid.senha}}</span>\r\n    </div>\r\n    <div style=\"text-align: center;\">\r\n      <button type=\"submit\" nbButton status=\"info\" ghost>Entrar</button>\r\n    </div>\r\n\r\n  </form>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"fundo\">\r\n  <div class=\"erro\" *ngIf=\"erro_api != ''\">✖ {{erro_api}}</div>\r\n  <div style=\"text-align: center;\"><img src=\"assets/imgs/logo_empresa.png\" /></div>\r\n  <!--<h4 style=\"text-align: center;\">CORBAN ONE</h4>-->\r\n  <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\" novalidate>\r\n    <div class=\"form-group\">\r\n      <label for=\"CPF\" class=\"label\">CPF</label>\r\n      <input type=\"tel\" name=\"cpf\" ngModel required #cpf=\"ngModel\" nbInput fullWidth id=\"cpf\" placeholder=\"CPF\"\r\n        type=\"number\">\r\n      <span class=\"text-danger\"> {{userValid.cpf}}</span>\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"senha\" class=\"label\">Senha</label>\r\n      <input type=\"password\" name=\"senha\" ngModel required #senha=\"ngModel\" nbInput fullWidth id=\"senha\"\r\n        placeholder=\"Senha\" oninput=\"this.value = this.value.toUpperCase()\">\r\n      <span class=\"text-danger\"> {{userValid.senha}}</span>\r\n    </div>\r\n    <div style=\"text-align: center;\">\r\n      <button type=\"submit\" nbButton status=\"info\" ghost>Entrar</button>\r\n    </div>\r\n\r\n  </form>\r\n</div>");
 
 /***/ }),
 
@@ -339,7 +339,7 @@ var TelaComponent = /** @class */ (function () {
         this.erro_api = '';
         this.userValid = {
             cpf: '',
-            senha: ''
+            senha: '',
         };
     }
     TelaComponent.prototype.ngOnInit = function () {
